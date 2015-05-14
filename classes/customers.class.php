@@ -32,5 +32,5 @@ class Customers {
     public function getFullName_r()
     {
         return ucwords($this->_last_name . ' ' . $this->_first_name);
-    } 
+    }
 }
