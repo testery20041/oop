@@ -13,6 +13,3 @@ $customer = new Customers();
 echo $customer->getFullName();
 echo '<br/>';
 echo $customer->getFullName_r();
-
-$date = DateTime::createFromFormat('j-M-Y', '15-Feb-2009');
-echo '<br/>'.$date->format('Y-m-d');
