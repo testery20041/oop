@@ -10,9 +10,14 @@ include_once 'classes/customers.class.php';
 
 $customer = new Customers();
 
-echo $customer->getFullName();
-echo '<br/>';
-echo $customer->getFullName_r();
+$new_customer = array(
+        'first_name'    => 'Willis',
+        'last_name'     => 'Bruce',
+        'user_id'       => '3',
+        'ID_card'       => NULL,
+        'phone_number'  => '+40-740-563252',
+        'email_address' => 'john.connor@fakedomain.com',
+        'postal_address'=> 'Iasi, Str. Berzelor, nr.5'
+    );
 
-$date = DateTime::createFromFormat('j-M-Y', '15-Feb-2009');
-echo '<br/>'.$date->format('Y-m-d');
+$customer->add($new_customer);
